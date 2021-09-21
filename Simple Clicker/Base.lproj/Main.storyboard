@@ -43,6 +43,36 @@
                                     <action selector="onClickAddScores:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Kq-gD-hMl"/>
                                 </connections>
                             </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikL-Rr-8Kz">
+                                <rect key="frame" x="253" y="612" width="161" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                <color key="tintColor" systemColor="secondaryLabelColor"/>
+                                <state key="normal" title="Make uprate x4">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickX4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mOO-tM-WZB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rbc-8m-neO">
+                                <rect key="frame" x="20" y="184" width="215" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWj-68-Sk5">
+                                <rect key="frame" x="0.0" y="612" width="161" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                <state key="normal" title="Make uprate x2">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickX2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RJW-EH-rmW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -51,6 +81,9 @@
                         <outlet property="buttonAddScores" destination="7aN-v6-5gY" id="Gz0-4J-vW2"/>
                         <outlet property="scoreLabel" destination="OzW-dD-BRq" id="Z5Y-LT-0t5"/>
                         <outlet property="scoreLabelPoint" destination="AXv-dd-AAS" id="kMD-0h-mQA"/>
+                        <outlet property="upRateLable" destination="Rbc-8m-neO" id="WIH-UF-GMh"/>
+                        <outlet property="updateX2" destination="jWj-68-Sk5" id="zmk-tA-icL"/>
+                        <outlet property="updateX4" destination="ikL-Rr-8Kz" id="cZg-vd-KAu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
