@@ -8,12 +8,21 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var scoreLabelPoint: UILabel!
+    @IBOutlet weak var buttonAddScores: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        scoreLabel.text = "Your score is: "
+        scoreLabelPoint.text = "0"
     }
-
-
+    
+    @IBAction func onClickAddScores(_ sender: Any) {
+        var scores = Int(scoreLabelPoint.text!)!
+        scores += 1
+        scoreLabelPoint.text = String(scores)
+    }
+    
 }
 
